@@ -1,7 +1,10 @@
 version: '1.0'
+stages:
+ - packaging
 steps:
   PackageMyNodeApp:
     title: Packaging Node application
+    stage: packaging
     image: node:11.1
     working_directory: ./01_simple_pipeline/nodejs_example
     commands:
@@ -10,6 +13,7 @@ steps:
       - npm install
   PackageMyPythonApp:
     title: Packaging Python application
+    stage: packaging
     image: python:3.6.4-alpine3.6
     working_directory: ./01_simple_pipeline/python_example
     commands:
