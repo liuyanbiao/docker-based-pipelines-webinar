@@ -19,4 +19,4 @@ steps:
     commands:
       - echo "My Python version is"
       - python --version
-      - pip install .   
+      #- pip install .   
