@@ -8,6 +8,7 @@ steps:
     image: node:9
     working_directory: ./04_volume/nest_example
     commands:
+      - ls -lt
       - npm install
   RunMyTests:
     title: Running unit tests
