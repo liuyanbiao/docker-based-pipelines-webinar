@@ -1,13 +1,17 @@
 version: '1.0'
+stages:
+ - packaging
 steps:
   DownloadMyDeps:
     title: Downloading deps
+    stage: packaging
     image: node:9
     working_directory: ./04_volume/nest_example
     commands:
       - npm install
   RunMyTests:
     title: Running unit tests
+    stage: packaging
     image: node:9
     working_directory: ./04_volume/nest_example
     commands:
