@@ -16,6 +16,6 @@ steps:
     working_directory: ./04_volume/nest_example
     commands:
       - pwd
-      - ls -ldF node_modules
+      - ls -lt
      # - npm test         
  
