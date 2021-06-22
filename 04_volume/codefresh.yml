@@ -17,5 +17,5 @@ steps:
     commands:
       - pwd
       - ls -ldF node_modules
-      - npm test         
+     # - npm test         
  
