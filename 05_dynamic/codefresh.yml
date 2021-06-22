@@ -10,6 +10,7 @@ steps:
     working_directory: ./05_dynamic/nest_example
     commands:
       - npm install
+      - pwd
       - ls -lt 
   CreateTestImage:
     title: Creating test image
