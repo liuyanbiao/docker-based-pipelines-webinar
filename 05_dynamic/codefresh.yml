@@ -16,7 +16,7 @@ steps:
     title: Creating test image
     stage: packaging
     type: build
-    working_directory: ./05_dynamic/nest_example
+    working_directory: ./
     dockerfile: Dockerfile.testing
     image_name: my-testing-container
     tag: ${{CF_SHORT_REVISION}}
@@ -24,7 +24,7 @@ steps:
     title: Running unit tests
     stage: testing
     image: ${{CreateTestImage}}
-    working_directory: ./05_dynamic/nest_example
+    working_directory: ./
     commands:
       - node --version
       - mocha --version
